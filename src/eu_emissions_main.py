@@ -227,7 +227,7 @@ def create_emissions_by_sector(
         units = ", tonnes CO\u2082 eq."
         save_name = f"emissions_per_capita_by_sector_{sector}_2022.png"
         title = (f"{sector.title()} Emissions per Capita by Country"
-                 f"and Sub-Sector (2022)")
+                 f" and Sub-Sector (2022)")
     else:
         ylabel = "Emissions"
         units = ", Mt CO\u2082 eq."
@@ -292,7 +292,7 @@ def create_emissions_by_sector(
         emissions_col = emissions_col + "_share"
         ylabel = "% Share of " + ylabel
         title = "% Share of " + title
-        save_name = "pct_share_of_" + title
+        save_name = "pct_share_of_" + save_name
     else:
         ylabel = ylabel + units
 
